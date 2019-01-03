@@ -1,21 +1,108 @@
+/*
+    FARROW --- green and orange
+
+    --world-dark-green:#314642;
+    --world-green:#818757;
+    --world-bone:#BEC3AF;
+    --world-off-white:#DED8C8;
+    --world-orange:#DD5F24;
+    --world-black:#34373C ;
+    --world-white:#ffffff;
+
+    FARROW --- Navy and Orange
+
+    --world-dark-green:#2B3235;
+    --world-green:#475D6B;
+    --world-bone:#DED8C8;
+    --world-off-white:#FAFAFA;
+    --world-orange:#DD5F24;
+    --world-black:#34373C ;
+    --world-white:#ffffff;    
+    
+*/
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --world-dark-green:#2B3235;
+    --world-green:#475D6B;
+    --world-bone:#DED8C8;
+    --world-off-white:#FAFAFA;
+    --world-orange:#DD5F24;
+    --world-black:#34373C ;
+    --world-white:#ffffff;
 }
 
 body{
-    background-color: #efefef;
     font-family: 'Open Sans', sans-serif;
 }
 
 .wrapper{
-    max-width: 100%;
-    margin-left: auto;
-
-    display: grid;
-    grid-gap: 0.5em;
-    grid-template-columns: 0.5em 1fr 1fr 1fr 1fr 1fr 1fr 0.5em;
-    grid-template-rows: 5em auto auto 5em auto 5em auto 5em auto;
+    max-width:100%;
+    max-height:100%;
+    margin-left:auto;
+    display:grid;
+    grid-gap:0.5em;
+    grid-template-columns:0.5em 1fr 1fr 1fr 1fr 1fr 0.5em;
 }
 
+#title-card{
+    background-color:var(--world-dark-green);
+    color:var(--world-white);
+    grid-column:1 / 9;
+}
+
+.title-menu-divider{
+    background-color:var(--world-orange);
+    height: 7px;
+    border: 0;
+}
+
+.menu-list{
+    list-style:none;
+    display:flex;
+    background-color:var(--world-bone);
+}
+
+.menu-list-item{
+    flex-grow:2;
+}
+
+.menu-list-link{
+    display:block;
+    text-align:center;
+    color:var(--world-dark-green);
+    Padding: 0.5em;
+}
+
+.menu-list-link:hover{
+    background:var(--world-off-white);
+    -webkit-transition:background 0.5s ease-in-out;
+    -moz-transition:background 0.5s ease-in-out;
+    transition:background-color 0.5s ease-in-out;
+}
+
+
+
+/* TROUBLE SHOOTING CSS */
+
+.darkgreen{
+    background-color: var(--world-dark-green);
+}
+
+.green{
+    background-color: var(--world-green);
+}
+
+.bone{
+    background-color: var(--world-bone);
+}
+
+.white{
+    background-color: var(--world-off-white);
+}
+
+.orange{
+    background-color: var(--world-orange);
+}
